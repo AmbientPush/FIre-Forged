@@ -1,0 +1,136 @@
+type: ItemTurret
+
+size: 3
+health: 200
+range: 288
+reload: 120
+
+hasLiquids: true
+liquidCapacity: 10
+consumes: {
+  liquid: lava/0.25
+}
+
+requirements: [
+  copper/1
+]
+
+shoot: {
+  type: ShootPattern
+  shots: 2
+  shotDelay: 3
+}
+
+inaccuracy: 4
+shootSound: shootEnergyField
+
+targetAir: false
+targetGround: true
+
+ammoPerShot: 2
+displayAmmoMultiplier: true
+ammoTypes: {
+  jotunnon: {
+    type: ArtilleryBulletType
+
+    lifetime: 30
+    speed: 5
+
+    damage: 0
+    splashDamage: 28
+    splashDamageRadius: 20
+    scaledSplashDamage: true
+
+    fragOnDespawn: true
+    fragOnAbsorb: false
+    fragOnHit: true
+    fragBullets: 2
+
+    fragBullet: {
+      type: ArtilleryBulletType
+
+      lifetime: 10
+      speed: 3
+
+      damage: 0
+      splashDamage: 36
+      splashDamageRadius: 12
+      scaledSplashDamage: true
+
+      fragOnDespawn: true
+      fragOnAbsorb: false
+      fragOnHit: true
+      fragBullets: 1
+
+      fragBullet: {
+        type: BasicBulletType
+
+        damage: 0
+        lifetime: 25
+        speed: 0
+        rotateSpeed: 1
+        sprite: "fire-forged-electrified-jotunnon-bullet"
+        drawSize: 8
+        parts: [
+          {
+            type: EffectSpawnerPart
+            effect: sparkExplosion
+            effectInterval: 4
+            effectChance: 0.8
+            effectRandRot: 360 
+          }
+        ]
+
+        collides: false
+        
+        fragOnDespawn: true
+        fragOnAbsorb: false
+        fragOnHit: true
+        fragBullets: 1
+
+        fragBullet: {
+          type: BasicBulletType
+
+          lifetime: 30
+          speed: 0
+
+          damage: 120
+          splashDamage: 44
+          splashDamageRadius: 12
+          scaledSplashDamage: true
+
+          collides: false
+
+          sprite: "fire-forged-electrified-jotunnon-bullet"
+          drawSize: 8
+          parts: [
+            {
+              type: EffectSpawnerPart
+              effect: sparkExplosion
+              effectInterval: 4
+              effectChance: 0.8
+              effectRandRot: 360 
+            }
+          ]
+
+          intervalBullets: 2
+          intervalDelay: 0
+          bulletInterval: 3
+          intervalRandomSpread: 12
+          intervalSpread: 35
+
+          intervalBullet: {
+            type: LightningBulletType
+            lightningCone: 0
+            lightningDamage: 12
+            lightningLength: 5
+            lightningLengthRand: 1
+            lightning: 2
+            lightningAngle: 0
+            lightningColor: FF4500
+          }
+        }
+      }
+    }
+  }
+}

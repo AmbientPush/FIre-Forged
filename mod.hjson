@@ -1,0 +1,9 @@
+name: fire-forged
+displayName: "Fire Forged"
+author: 
+'''
+Ambient Push
+'''
+description: "who needs a description anyways?"
+version: v0 pre-alpha
+minGameVersion: 147

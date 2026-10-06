@@ -1,0 +1,42 @@
+type: MassDriver
+
+size: 2
+health: 150
+requirements: [
+  basalt/50
+  aluminum/30
+  copper-ingot/15
+  silica/20
+]
+
+reload: 60
+itemCapacity: 60
+minDistribute: 5
+range: 96
+
+shootEffect: [
+  {
+    type: WaveEffect
+    sides: 6
+    lifetime: 45
+    sizeFrom: 4
+    sizeTo: 12
+    strokeFrom: 4
+    strokeTo: 1
+    colorFrom: 1fec30d3
+    colorTo: 139e522a
+  }
+]
+receiveEffect: [
+  {
+    type: WaveEffect
+    sides: 6
+    lifetime: 45
+    sizeFrom: 4
+    sizeTo: 12
+    strokeFrom: 4
+    strokeTo: 1
+    colorFrom: 1fec30d3
+    colorTo: 139e522a
+  }
+]

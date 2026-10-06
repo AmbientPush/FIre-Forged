@@ -1,0 +1,23 @@
+type: GenericCrafter
+
+consumes: {
+  liquids: [
+    molten-copper/0
+    molten-aluminum/0
+    molten-silica/0
+    molten-ferrite/0
+  ]
+}
+
+outputLiquids: [
+  molten-copper/0
+  molten-aluminum/0
+  molten-silica/0
+  molten-ferrite/0
+]
+
+requirements: [
+  copper/1
+]
+
+category: liquid
