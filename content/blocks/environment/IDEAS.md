@@ -23,3 +23,23 @@ Inert
 Fusible
 Azoic
 Deplete / Depleted
+
+Soft
+Spongy
+Mellow
+Sentiment
+Timid
+Lavish
+Fertile
+Ample
+Musty
+Acrid
+Acidic
+Arbo
+Coarse
+Mucky
+Crude
+Corrupt / Corrupted
+Base
+Sunken
+Vacant
