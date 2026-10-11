@@ -6,7 +6,7 @@ range: 288
 reload: 120
 
 hasLiquids: true
-liquidCapacity: 10
+liquidCapacity: 12
 consumes: {
   liquid: lava/0.25
 }

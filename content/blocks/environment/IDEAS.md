@@ -43,3 +43,5 @@ Corrupt / Corrupted
 Base
 Sunken
 Vacant
+
+Bloosom / Bloom

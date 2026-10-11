@@ -1,0 +1,75 @@
+type: ItemTurret
+
+size: 3
+health: 200
+range: 192
+reload: 120
+
+hasLiquids: true
+liquidCapacity: 12
+consumes: {
+  liquid: lava/0.25
+}
+
+requirements: [
+  copper/1
+]
+
+shoot: {
+  type: ShootPattern
+  shots: 15
+  shotDelay: 3
+  firstShotDelay: 15
+}
+
+inaccuracy: 15
+shootSound: shootFlame
+
+targetAir: false
+targetGround: true
+
+ammoPerShot: 3
+displayAmmoMultiplier: true
+consumeAmmoOnce: true
+ammoTypes: {
+  heat-cube: {
+    type: LightningBulletType
+    lightning: 1
+    lightningAngle: 0
+    lightningCone: 0
+    lightningDamage: 8
+    lightningLength: 15
+    lightningLengthRand: 5
+    
+    lifetime: 15
+    speed: 0
+    collidesAir: false
+    laserAbsorb: true
+    laserBullet: true
+
+    pierce: true
+    pierceArmor: false
+    pierceBuilding: false
+    pierceCap: 4
+
+    chargeEffect: [
+      {
+        type: ParticleEffect
+
+        lifetime: 15
+        clip: 200
+
+        particles: 8
+        spin: 1
+        sizeFrom: 6
+        sizeTo: 1
+        sizeInterp: swingIn
+        region: fire-forged-drill-spark
+
+        baseLength: 180
+        length: -180
+        randLength: true
+      }
+    ]
+  }
+}
