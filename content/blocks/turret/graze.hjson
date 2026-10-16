@@ -6,10 +6,10 @@ range: 192
 reload: 120
 
 hasLiquids: true
-liquidCapacity: 12
+/*liquidCapacity: 12
 consumes: {
   liquid: lava/0.25
-}
+}*/
 
 requirements: [
   copper/1
