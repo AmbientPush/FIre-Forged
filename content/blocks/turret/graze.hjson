@@ -32,31 +32,31 @@ shoot: {
     type: ShootPattern
     shots: 1
     shotDelay: 1
-    firstShotDelay: 0
+    firstShotDelay: 15
   }
   dest: [
     {
       type: ShootPattern
       shots: 5
-      firstShotDelay: 15
+      firstShotDelay: 0
       shotDelay: 4
     }
     {
       type: ShootPattern
       shots: 4
-      firstShotDelay: 35
+      firstShotDelay: 20
       shotDelay: 3
     }
     {
       type: ShootPattern
       shots: 3
-      firstShotDelay: 47
+      firstShotDelay: 32
       shotDelay: 2
     }
     {
       type: ShootPattern
       shots: 7
-      firstShotDelay: 53
+      firstShotDelay: 37
       shotDelay: 1
     }
   ]
