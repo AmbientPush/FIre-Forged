@@ -28,7 +28,12 @@ shoot: {
 
 shoot: {
   type: ShootMulti
-  source: {}
+  source: {
+    type: ShootPattern
+    shots: 1
+    shotDelay: 1
+    firstShotDelay: 0
+  }
   dest: [
     {
       type: ShootPattern
