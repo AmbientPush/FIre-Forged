@@ -6,10 +6,14 @@ range: 192
 reload: 120
 
 hasLiquids: true
-/*liquidCapacity: 12
-consumes: {
+liquidCapacity: 12
+/*consumes: {
   liquid: lava/0.25
 }*/
+coolant: {
+  liquid: superheated-steam/0.25
+  multiplier: 2
+}
 
 requirements: [
   copper/1
@@ -22,6 +26,38 @@ shoot: {
   firstShotDelay: 15
 }
 
+shoot: {
+  type: ShootMulti
+  source: {}
+  dest: [
+    {
+      type: ShootPattern
+      shots: 5
+      firstShotDelay: 15
+      shotDelay: 4
+    }
+    {
+      type: ShootPattern
+      shots: 4
+      firstShotDelay: 35
+      shotDelay: 3
+    }
+    {
+      type: ShootPattern
+      shots: 3
+      firstShotDelay: 47
+      shotDelay: 2
+    }
+    {
+      type: ShootPattern
+      shots: 7
+      firstShotDelay: 53
+      shotDelay: 1
+    }
+  ]
+}
+
+shootCone: 10
 inaccuracy: 15
 shootSound: shootFlame
 
@@ -63,12 +99,25 @@ ammoTypes: {
         spin: 1
         sizeFrom: 6
         sizeTo: 1
-        sizeInterp: swingIn
+        sizeInterp: swingOut
         region: fire-forged-drill-spark
 
         baseLength: 180
         length: -180
         randLength: true
+      }
+      {
+        type: WaveEffect
+
+        lifetime: 15
+        clip: 200
+
+        sides: 16
+        sizeFrom: 180
+        sizeTo: 0
+        interp: swingOut
+        strokeFrom: 2
+        strokeTo: 1
       }
     ]
   }
