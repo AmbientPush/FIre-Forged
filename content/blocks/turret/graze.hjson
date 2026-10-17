@@ -9,11 +9,11 @@ hasLiquids: true
 liquidCapacity: 12
 /*consumes: {
   liquid: lava/0.25
-}*/
+}
 coolant: {
   liquid: superheated-steam/0.25
   multiplier: 2
-}
+}*/
 
 requirements: [
   copper/1
